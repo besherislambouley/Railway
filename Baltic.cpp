@@ -1,9 +1,9 @@
 /*
  * first let's learn how to add a value x on the path from a to b , lets have an array sum[node] -> sum[a] ++ , sum [b] ++ , sum [lca(a,b)] -= 2 , now we run a dfs calculating the value of every edge using prifx sum 
  * let's have an array ord[node] = the order of that node in the dfs , let's build lca table 
- * now we can sort every query according to its order, add 1 between every two adjacent nodes in the query vector & the last and the first node also
+ * now we can sort every query according to its order, add 1 on the path between every two adjacent nodes in the query vector & the last and the first node also
  * in this way every edge between those nodes are increased by 2 , 
- * we print the edges with value >= k 
+ * we print the edges with value >= k*2 
 */ 
 #define fast ios_base::sync_with_stdio(0),cin.tie(0),cout.tie(0)
 #include <bits/stdc++.h>
